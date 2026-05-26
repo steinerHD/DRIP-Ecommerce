@@ -1,0 +1,129 @@
+.page { display: flex; flex-direction: column; min-height: 100vh; }
+
+.layout {
+  display: grid;
+  grid-template-columns: 1fr 360px;
+  gap: 60px;
+  padding: 60px 80px;
+  flex: 1;
+  align-items: start;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 32px;
+}
+
+.title { font-size: 32px; font-weight: 800; }
+
+.headerActions { display: flex; gap: 16px; }
+
+.undoBtn, .clearBtn {
+  font-size: 13px;
+  color: var(--gray-400);
+  transition: color 0.2s;
+  &:hover { color: var(--black); }
+}
+
+.items { display: flex; flex-direction: column; gap: 0; }
+
+.item {
+  display: grid;
+  grid-template-columns: 100px 1fr auto;
+  gap: 20px;
+  padding: 24px 0;
+  border-bottom: 1px solid var(--gray-200);
+  align-items: center;
+}
+
+.image { width: 100px; height: 120px; object-fit: cover; }
+
+.info { display: flex; flex-direction: column; gap: 6px; }
+
+.category {
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  color: var(--gray-400);
+}
+
+.name { font-size: 15px; font-weight: 500; }
+
+.qty { font-size: 13px; color: var(--gray-600); }
+
+.right { display: flex; flex-direction: column; align-items: flex-end; gap: 12px; }
+
+.price { font-size: 16px; font-weight: 700; }
+
+.removeBtn {
+  font-size: 12px;
+  color: var(--gray-400);
+  text-decoration: underline;
+  transition: color 0.2s;
+  &:hover { color: #dc2626; }
+}
+
+.empty {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 60px 0;
+  align-items: flex-start;
+
+  p { font-size: 16px; color: var(--gray-400); }
+}
+
+.shopBtn {
+  padding: 14px 28px;
+  background: var(--black);
+  color: var(--white);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  transition: opacity 0.2s;
+  &:hover { opacity: 0.8; }
+}
+
+.summary {
+  padding: 32px;
+  border: 1px solid var(--gray-200);
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  position: sticky;
+  top: 80px;
+}
+
+.summaryTitle { font-size: 18px; font-weight: 700; margin-bottom: 8px; }
+
+.summaryRow {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  color: var(--gray-600);
+}
+
+.summaryDivider { height: 1px; background: var(--gray-200); margin: 4px 0; }
+
+.totalRow {
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--black);
+}
+
+.checkoutBtn {
+  width: 100%;
+  padding: 16px;
+  background: var(--black);
+  color: var(--white);
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  margin-top: 8px;
+  transition: opacity 0.2s;
+  &:hover { opacity: 0.8; }
+}
+
+.shipping { font-size: 12px; color: var(--gray-400); text-align: center; }

@@ -1,0 +1,82 @@
+.page { display: flex; flex-direction: column; min-height: 100vh; }
+
+.layout {
+  display: grid;
+  grid-template-columns: 240px 1fr;
+  gap: 0;
+  flex: 1;
+}
+
+.sidebar {
+  padding: 40px 32px;
+  border-right: 1px solid var(--gray-200);
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.filterGroup { display: flex; flex-direction: column; gap: 10px; }
+
+.filterTitle {
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  color: var(--gray-400);
+  margin-bottom: 4px;
+}
+
+.filterBtn {
+  text-align: left;
+  font-size: 14px;
+  font-weight: 400;
+  padding: 6px 0;
+  color: var(--gray-600);
+  border-bottom: 1.5px solid transparent;
+  transition: all 0.2s;
+  &:hover { color: var(--black); }
+}
+
+.active {
+  color: var(--black);
+  font-weight: 700;
+  border-bottom-color: var(--black);
+}
+
+.range {
+  width: 100%;
+  accent-color: var(--black);
+}
+
+.priceLabel { font-size: 13px; font-weight: 600; }
+
+.main { padding: 40px; }
+
+.topBar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 32px;
+}
+
+.heading { font-size: 24px; font-weight: 800; }
+
+.count { font-size: 13px; color: var(--gray-400); }
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px 24px;
+}
+
+.skeleton {
+  aspect-ratio: 3/4;
+  background: var(--gray-100);
+  animation: pulse 1.5s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50%       { opacity: 0.4; }
+}
+
+.empty { font-size: 14px; color: var(--gray-400); margin-top: 40px; }

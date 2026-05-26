@@ -1,0 +1,100 @@
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 40px;
+  height: 64px;
+  background: var(--white);
+  border-bottom: 1px solid var(--gray-200);
+}
+
+.logo {
+  font-size: 22px;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+}
+
+.links {
+  display: flex;
+  gap: 36px;
+  list-style: none;
+
+  a {
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0.03em;
+    transition: opacity 0.2s;
+    &:hover { opacity: 0.5; }
+  }
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.iconBtn {
+  display: flex;
+  align-items: center;
+  padding: 4px;
+  transition: opacity 0.2s;
+  &:hover { opacity: 0.5; }
+}
+
+.cartBtn {
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding: 4px;
+  transition: opacity 0.2s;
+  &:hover { opacity: 0.5; }
+}
+
+.badge {
+  position: absolute;
+  top: -4px;
+  right: -6px;
+  background: var(--black);
+  color: var(--white);
+  font-size: 10px;
+  font-weight: 700;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.signInBtn {
+  padding: 8px 20px;
+  border: 1.5px solid var(--black);
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  transition: all 0.2s;
+  &:hover { background: var(--black); color: var(--white); }
+}
+
+.adminLink {
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--gray-600);
+  transition: color 0.2s;
+  &:hover { color: var(--black); }
+}
+
+.searchOverlay {
+  position: absolute;
+  top: 64px;
+  left: 0;
+  right: 0;
+  background: var(--white);
+  border-bottom: 1px solid var(--gray-200);
+  padding: 16px 40px;
+  z-index: 99;
+}
